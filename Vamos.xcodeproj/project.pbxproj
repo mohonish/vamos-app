@@ -12,16 +12,22 @@
 		8C70A0C31D928F930030E5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C70A0C11D928F930030E5ED /* Main.storyboard */; };
 		8C70A0C51D928F930030E5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C70A0C41D928F930030E5ED /* Assets.xcassets */; };
 		8C70A0C81D928F930030E5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C70A0C61D928F930030E5ED /* LaunchScreen.storyboard */; };
+		8C70A0D01D9297350030E5ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C70A0CF1D9297350030E5ED /* GoogleService-Info.plist */; };
+		F22B7990861DAB29ACA37CA0 /* Pods_Vamos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48939C1749A7450CCCAD3C50 /* Pods_Vamos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48939C1749A7450CCCAD3C50 /* Pods_Vamos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vamos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6973D142CA6F6300D261178D /* Pods-Vamos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vamos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vamos/Pods-Vamos.release.xcconfig"; sourceTree = "<group>"; };
 		8C70A0BA1D928F930030E5ED /* Vamos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vamos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C70A0BD1D928F930030E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C70A0BF1D928F930030E5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C70A0BF1D928F930030E5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		8C70A0C21D928F930030E5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C70A0C41D928F930030E5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C70A0C71D928F930030E5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C70A0C91D928F930030E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C70A0CF1D9297350030E5ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C9AD78D002126EA5F83F6CC5 /* Pods-Vamos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vamos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vamos/Pods-Vamos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22B7990861DAB29ACA37CA0 /* Pods_Vamos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AC8E944EC4E09F97B10D150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9AD78D002126EA5F83F6CC5 /* Pods-Vamos.debug.xcconfig */,
+				6973D142CA6F6300D261178D /* Pods-Vamos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C70A0B11D928F930030E5ED = {
 			isa = PBXGroup;
 			children = (
 				8C70A0BC1D928F930030E5ED /* Vamos */,
 				8C70A0BB1D928F930030E5ED /* Products */,
+				6AC8E944EC4E09F97B10D150 /* Pods */,
+				DDBEEB37B507B0EF8A345FFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				8C70A0C41D928F930030E5ED /* Assets.xcassets */,
 				8C70A0C61D928F930030E5ED /* LaunchScreen.storyboard */,
 				8C70A0C91D928F930030E5ED /* Info.plist */,
+				8C70A0CF1D9297350030E5ED /* GoogleService-Info.plist */,
 			);
 			path = Vamos;
+			sourceTree = "<group>";
+		};
+		DDBEEB37B507B0EF8A345FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48939C1749A7450CCCAD3C50 /* Pods_Vamos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C70A0CC1D928F930030E5ED /* Build configuration list for PBXNativeTarget "Vamos" */;
 			buildPhases = (
+				D75EA677AFF43AF28243562F /* [CP] Check Pods Manifest.lock */,
 				8C70A0B61D928F930030E5ED /* Sources */,
 				8C70A0B71D928F930030E5ED /* Frameworks */,
 				8C70A0B81D928F930030E5ED /* Resources */,
+				8CCABD857F4D9D5E1A5E9FB8 /* [CP] Embed Pods Frameworks */,
+				834B17F48F035A9B22740132 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +126,7 @@
 				TargetAttributes = {
 					8C70A0B91D928F930030E5ED = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C70A0C81D928F930030E5ED /* LaunchScreen.storyboard in Resources */,
+				8C70A0D01D9297350030E5ED /* GoogleService-Info.plist in Resources */,
 				8C70A0C51D928F930030E5ED /* Assets.xcassets in Resources */,
 				8C70A0C31D928F930030E5ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		834B17F48F035A9B22740132 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vamos/Pods-Vamos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CCABD857F4D9D5E1A5E9FB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vamos/Pods-Vamos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75EA677AFF43AF28243562F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C70A0B61D928F930030E5ED /* Sources */ = {
@@ -258,8 +337,10 @@
 		};
 		8C70A0CD1D928F930030E5ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9AD78D002126EA5F83F6CC5 /* Pods-Vamos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vamos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xenolabs.Vamos;
@@ -270,8 +351,10 @@
 		};
 		8C70A0CE1D928F930030E5ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6973D142CA6F6300D261178D /* Pods-Vamos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vamos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xenolabs.Vamos;
@@ -299,6 +382,7 @@
 				8C70A0CE1D928F930030E5ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
